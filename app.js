@@ -17,6 +17,6 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(routes);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 const HOST = process.env.NODE_ENV !== "production" ? "localhost" : "0.0.0.0";
 app.listen(PORT, HOST);
